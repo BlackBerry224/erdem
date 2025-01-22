@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.about, .achievements, .reviews, .contact {
+    margin: 20px 0;
+}
+
+.card, .review-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img, .review-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.contact a {
+    color: #007BFF;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Адаптивность */
+@media (min-width: 600px) {
+    .achievements {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 48%;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+}
